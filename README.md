@@ -2,7 +2,8 @@
 Это мое решение тестового задания от JetBrains. Задача заключалась в определении токсичности комментария.
 
 Все эксперименты доступны на [Comet.ml](https://www.comet.ml/danildmitriev1999/jetbrainsinternship?shareable=vn9P5E9MO890e9IJlH2cSK1Pg)
-Основной ноутбук: `inference.ipynb` [![Open In Colab](https://colab.research.google.com/drive/123EtK_GVRRft0fN3R11yop2aCeEpp8-s?usp=sharing)
+
+Основной ноутбук: `inference.ipynb` [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/123EtK_GVRRft0fN3R11yop2aCeEpp8-s?usp=sharing)
 
 # Данные
 Данные были взяты из библиотеки `Hugging Face Dataset`. В данных были только обучающие данные с преобладающим количеством
