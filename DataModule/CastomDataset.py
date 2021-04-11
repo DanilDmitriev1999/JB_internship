@@ -16,22 +16,11 @@ class CastomDataModule(Dataset):
                                                          max_length=95,
                                                          return_tensors="pt").to(device)
 
-    @staticmethod
-    def prepare_data(text):
-        text = text.replace('', '')
-        text = text.replace('Â', '')
-        text = text.replace('ð', '')
-        text = text.replace('¾', '')
-        text = text.replace('â', '')
-        text = text.replace('µ', '')
-        text = text.replace('ï', '')
-        return text
-
     def __len__(self) -> int:
         return len(self.tweets)
 
     def __getitem__(self, idx):
-        tweet_tokenizer = self.tokenizer(self.prepare_data(self.tweets[idx]))
+        tweet_tokenizer = self.tokenizer(self.tweets[idx])
         label = self.labels[idx]
 
         result = {
