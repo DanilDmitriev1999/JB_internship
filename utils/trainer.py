@@ -19,6 +19,7 @@ class ModelTrainer(pl.LightningModule):
         self.res = {'prob': [], 'pred': [], 'label': []}
 
         self.criterion = criterion
+        self.save_hyperparameters()
 
     def forward(self, input_ids, attention_mask):
         output = self.model(input_ids, attention_mask)
