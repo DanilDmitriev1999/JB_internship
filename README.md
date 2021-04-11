@@ -50,6 +50,7 @@
 
 `Deberta-base (6, 7, 8 layers)` - доступна для скачивания. [Link](https://www.comet.ml/api/rest/v2/registry-model/item/download?workspaceName=danildmitriev1999&modelName=deberta-jb&version=1.0.0)
 Ее результаты:
+
 classification_report
 
               precision    recall  f1-score   support
@@ -62,6 +63,7 @@ classification_report
     weighted avg       0.97      0.97      0.97      6393
 
 confusion_matrix
+
 [[5851 94]
 
 [ 84 364]]
